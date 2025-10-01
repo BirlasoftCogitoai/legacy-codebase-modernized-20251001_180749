@@ -1,0 +1,7 @@
+FROM postgres:13
+
+# Add the database schema to Docker entrypoint
+COPY ./database/schema.sql /docker-entrypoint-initdb.d/
+```
+
+##
